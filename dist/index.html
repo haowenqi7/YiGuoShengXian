@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/public.css">
+    <link rel="stylesheet" href="../dist/css/index.css">
+</head>
+
+<body>
+    <div class='wrap'>
+        <!-- 顶部导航 -->
+        <div class='nav-wrap' id='right'>
+            <section class='nav'>
+                <!-- 顶部导航左边 -->
+                <ul class='nav-left'>
+                    <li>欢迎光临易果生鲜！</li>
+                    <li>
+                        <p>配送至：<a href="javascript:;" class='city'>上海<i></i></a></p>
+                    </li>
+                    <li>
+                        <img src="./img/nav-notice.png" alt="">
+                        <a href="#" class='police'>网警提示</a>
+                        
+                    </li>
+                </ul>
+
+                <!-- 顶部导航右边 -->
+                <ul class='nav-right'>
+                    <li>
+                        <a href="javascript:;" class='recruitment'><span></span>人才招聘</a>
+                    </li> 
+                    <li>
+                        <a href="javascript:;" class='aptitude'><span></span>营业资质</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class='coupons'><span></span>礼品兑换卷入口</a>
+                    </li> 
+                    <li>
+                        <a href="javascript:;" class='card'><span></span>礼品卡绑定</a> 
+                    </li>
+                    <li class='phone-wrap'>
+                        <a href="javascript:;" class='phone'><span></span>手机易果<i></i></a>
+                        <div>
+                            <img src="./img/code1.jpg" alt="">
+                            <span>扫一扫下载APP</span>
+                            <img src="./img/code2.jpg" alt="">
+                            <span>易果生鲜微信</span>
+                        </div>
+                    </li>
+                    <li class='my-wrap'>  
+                        <a href="javascript:;" class='my'><span></span>我的易果<i></i></a>
+                        <div class='my-menu'>
+                            <a href="javascript:;">我的订单</a>
+                            <a href="javascript:;">我的优惠劵<i class='my-menu-two'>0</i></a>
+                            <a href="javascript:;">我的收藏</a>
+                            <a href="javascript:;">我的悠币</a>
+                            <a href="javascript:;">我的退换货</a>
+                            <a href="javascript:;">预存款查询</a>
+                            <a href="javascript:;">立即充值</a>
+                        </div>
+                    </li>
+                    <li class='nav-change'>
+                        <a href="./html/ygsx-registor.html">[注册]</a>
+                    </li>
+                    <li class='nav-change'>
+                        <a href="./html/ygsx-login.html">[登录]</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+        <!-- 头部 -->
+        <div class='header-wrap'>
+            <header>
+                <!-- logo -->
+                    <a href="" class="logo"></a>
+                <!-- 搜索框 -->
+                <section class='header-center'>
+                    <section>
+                    <input type="text" class='input-text' value="输入商品名 / 编号 / 拼音" onfocus="if(this.value=='输入商品名 / 编号 / 拼音'){this.value='';this.style.color='#000';}"onblur="if(this.value==''){this.value='输入商品名 / 编号 / 拼音';this.style.color='#999';}"style="color:rgba(153,153,153);">
+                        <input type="submit" value="搜索" class='input-sub'>
+                    </section>
+                    <section class='header-nav'> 
+                        <a href="javascript:;" class='one'>虾仁</a>
+                        <a href="javascript:;" class='one'>三文鱼</a>
+                        <a href="javascript:;" class='one'>冰鲜牛肉</a>
+                        <a href="javascript:;" class='two'>刺身</a>
+                        <a href="javascript:;" class='one'>新西兰鹿肉</a>
+                        <a href="javascript:;" class='two'>鳕鱼</a>
+                        <a href="javascript:;" class='two'>牛腱</a>
+                        <a href="javascript:;" class='two'>奇异果</a>
+                    </section>
+                </section>
+                <!-- 购物车 -->
+                <section class='shopping-cart'>
+                    <!-- 初始状态 -->
+                    <section class='shopping-cart-start'>
+                        <section class='shopping-num'>
+                            <span><i id='buy'></i></span>
+                        </section>
+                        <section class='shopping-car' id='car-div'>
+                            <p id='car-p'>购物车中还没有商品，赶紧选购吧！</p>
+                        </section>  
+                    </section>
+                </section>
+            </header>
+        </div>
+
+        <!-- 头部2 -->
+        <div class='header-wrap2'>
+            <header>
+                <!-- logo -->
+                    <a href="" class="logo2"></a>
+                <!-- 搜索框 -->
+                <section class='header-center2'>
+                    <section>
+                        <input type="text" class='input-text2' value="输入商品名 / 编号 / 拼音" onfocus="if(this.value=='输入商品名 / 编号 / 拼音'){this.value='';this.style.color='#000';}"onblur="if(this.value==''){this.value='输入商品名 / 编号 / 拼音';this.style.color='#999';}"style="color:rgba(153,153,153);">
+                        <input type="submit" value="搜索" class='input-sub2'>
+                    </section>
+                    <section class='header-nav2'> 
+                        <a href="javascript:;" class='one'>虾仁</a>
+                        <a href="javascript:;" class='one'>三文鱼</a>
+                        <a href="javascript:;" class='one'>冰鲜牛肉</a>
+                        <a href="javascript:;" class='two'>刺身</a>
+                    </section>
+                </section>
+                <!-- 购物车 -->
+                <section class='shopping-cart2'>
+                    <!-- 初始状态 -->
+                    <section class='shopping-cart-start2'>
+                        <section class='shopping-num2'>
+                            <span><i id='buy2'></i></span>
+                        </section>
+                        <section class='shopping-car2' id='car2-div'>
+                            <p id='car2-p'>购物车中还没有商品，赶紧选购吧！</p>
+                        </section>  
+                    </section>
+                </section>
+            </header>
+        </div>
+
+
+        <!-- 二级菜单 -->
+        <div class='second-menu'>
+            <div class='second-menu-all'>
+                <a href="javascript:;">全部商品分类▼</a>
+            </div>
+            <ul class='second-menu-num'>
+                <li href="javascript:;" class='second-menu-one'><span></span><p>精选肉类</p><i>&gt</i>
+                    <div class='second-menu-one1'>
+                    <h4><a href="javascript:;">精选肉类</a></h4>
+                        <a href="./html/list.html">蛋</a>
+                        <a href="javascript:;">牛排</a>
+                        <a href="javascript:;">蛋</a>
+                        <a href="javascript:;">牛排</a>
+                        <a href="javascript:;">蛋</a>
+                        <a href="javascript:;">牛排</a>
+                        <img src="./img/second-menu-big.png" alt="">
+                    </div>
+                </li>
+                <li href="javascript:;"><span></span><p>海鲜水产</p><i></i></li>
+                <li href="javascript:;"><span></span><p>乳品糕点</p><i></i></li>
+                <li href="javascript:;"><span></span><p>新鲜蔬菜</p><i></i></li>
+                <li href="javascript:;"><span></span><p>方便速食</p><i></i></li>
+                <li href="javascript:;"><span></span><p>粮油杂货</p><i></i></li>
+                <li href="javascript:;"><span></span><p>新鲜水果</p><i></i></li>
+                <li href="javascript:;"><span></span><p>食品饮料</p><i></i></li>
+                <li href="javascript:;"><span></span><p>礼品礼券</p><i></i></li>
+                <li href="javascript:;"><span></span><p>生活日用</p><i></i></li>
+            </ul>
+        </div>
+
+
+        <!-- 轮播图 -->
+        <section class='swiper-wrap'>
+            <div class='img-wrap'><img src="./img/swiper.jpg" alt=""></div>
+            <div class='swiper-left'>&lt;</div>
+            <div class='swiper-right'>&gt;</div>
+        </section>
+
+        <!-- 商品区 -->
+        <div class='com-wrap' id='lione'>
+            <div class='com'>
+                <!-- 商品标题 -->
+                <div class='com-title'>
+                    <h2>
+                        <i>F1</i>
+                        <b>新鲜水果</b>
+                    </h2>
+                    <span class='com-title2'>
+                        <a href="">原籍专区</a>
+                        <i>|</i>
+                        <a href="">柑桔橙柚</a>
+                    </span>
+                </div>
+                <div>
+                    <div class='com-main-left'>
+                        <a href="">
+                            <img src="./img/com-main.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class='com-main-right'>
+                        <ul>
+                            <li>
+                                <img src="./img/com-main1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main3.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main5.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main6.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品区2 -->
+        <div class='com-wrap' id='litwo'>
+            <div class='com'>
+                <!-- 商品标题 -->
+                <div class='com-title'>
+                    <h2>
+                        <i>F2</i>
+                        <b>精选肉类</b>
+                    </h2>
+                    <span class='com-title2'>
+                        <a href="">欧洲天然猪</a>
+                        <i>|</i>
+                        <a href="">澳洲牛肉</a>
+                        <i>|</i>
+                        <a href="">肉类制品</a>
+                    </span>
+                </div>
+                <div>
+                    <div class='com-main-left'>
+                        <a href="">
+                            <img src="./img/com-main.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class='com-main-right2'>
+                        <div class='img1'>
+                            <img src="./img/com-main21.jpg" alt="">
+                        </div>
+                        <div class='img2'>
+                            <ul>
+                            <li>
+                                <img src="./img/com-main22.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main22.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main22.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main22.jpg" alt="">
+                            </li>
+                            </ul>
+                        </div>
+                        <div class='img3'>
+                            <img src="./img/com-main23.jpg" alt="">
+                        </div>
+                        <div class='img4'>
+                            <img src="./img/main2-pig1.jpg" alt="">
+                            <img src="./img/main2-pig2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='com-wrap' id='lithree'>
+            <div class='com'>
+                <!-- 商品标题 -->
+                <div class='com-title'>
+                    <h2>
+                        <i>F3</i>
+                        <b>海鲜水产</b>
+                    </h2>
+                    <span class='com-title2'>
+                        <a href="">原籍专区</a>
+                        <i>|</i>
+                        <a href="">柑桔橙柚</a>
+                    </span>
+                </div>
+                <div>
+                    <div class='com-main-left'>
+                        <a href="">
+                            <img src="./img/com-main.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class='com-main-right'>
+                        <ul>
+                            <li>
+                                <img src="./img/com-main1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main3.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main5.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main6.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='com-wrap' id='lifour'>
+            <div class='com'>
+                <!-- 商品标题 -->
+                <div class='com-title'>
+                    <h2>
+                        <i>F4</i>
+                        <b>乳品糕点</b>
+                    </h2>
+                    <span class='com-title2'>
+                        <a href="">原籍专区</a>
+                        <i>|</i>
+                        <a href="">柑桔橙柚</a>
+                    </span>
+                </div>
+                <div>
+                    <div class='com-main-left'>
+                        <a href="">
+                            <img src="./img/com-main.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class='com-main-right'>
+                        <ul>
+                            <li>
+                                <img src="./img/com-main1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main3.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main5.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main6.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='com-wrap' id=lifive>
+            <div class='com'>
+                <!-- 商品标题 -->
+                <div class='com-title'>
+                    <h2>
+                        <i>F5</i>
+                        <b>新鲜蔬菜</b>
+                    </h2>
+                    <span class='com-title2'>
+                        <a href="">原籍专区</a>
+                        <i>|</i>
+                        <a href="">柑桔橙柚</a>
+                    </span>
+                </div>
+                <div>
+                    <div class='com-main-left'>
+                        <a href="">
+                            <img src="./img/com-main.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class='com-main-right'>
+                        <ul>
+                            <li>
+                                <img src="./img/com-main1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main3.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main5.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main6.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='com-wrap' id='lisix'>
+            <div class='com'>
+                <!-- 商品标题 -->
+                <div class='com-title'>
+                    <h2>
+                        <i>F6</i>
+                        <b>方便速食</b>
+                    </h2>
+                    <span class='com-title2'>
+                        <a href="">原籍专区</a>
+                        <i>|</i>
+                        <a href="">柑桔橙柚</a>
+                    </span>
+                </div>
+                <div>
+                    <div class='com-main-left'>
+                        <a href="">
+                            <img src="./img/com-main.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class='com-main-right'>
+                        <ul>
+                            <li>
+                                <img src="./img/com-main1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main3.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main5.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main6.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='com-wrap' id='liseven'>
+            <div class='com'>
+                <!-- 商品标题 -->
+                <div class='com-title'>
+                    <h2>
+                        <i>F7</i>
+                        <b>粮油杂货</b>
+                    </h2>
+                    <span class='com-title2'>
+                        <a href="">原籍专区</a>
+                        <i>|</i>
+                        <a href="">柑桔橙柚</a>
+                    </span>
+                </div>
+                <div>
+                    <div class='com-main-left'>
+                        <a href="">
+                            <img src="./img/com-main.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class='com-main-right'>
+                        <ul>
+                            <li>
+                                <img src="./img/com-main1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main3.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main5.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main6.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='com-wrap' id='lieight'>
+            <div class='com'>
+                <!-- 商品标题 -->
+                <div class='com-title'>
+                    <h2>
+                        <i>F8</i>
+                        <b>食品饮料</b>
+                    </h2>
+                    <span class='com-title2'>
+                        <a href="">原籍专区</a>
+                        <i>|</i>
+                        <a href="">柑桔橙柚</a>
+                    </span>
+                </div>
+                <div>
+                    <div class='com-main-left'>
+                        <a href="">
+                            <img src="./img/com-main.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class='com-main-right'>
+                        <ul>
+                            <li>
+                                <img src="./img/com-main1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main3.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main5.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/com-main6.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!-- 底部导航 -->
+        <div class='foot-nav-wrap'>
+            <div class='foot-nav'>
+                <ul>
+                    <li>
+                        <b>全球精选</b>
+                        <span>一站式生鲜购物方案</span>
+                    </li>
+                    <li>
+                        <b>全球精选</b>
+                        <span>一站式生鲜购物方案</span>
+                    </li>
+                    <li>
+                        <b>全球精选</b>
+                        <span>一站式生鲜购物方案</span>
+                    </li>
+                    <li>
+                        <b>全球精选</b>
+                        <span>一站式生鲜购物方案</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- 尾部列表 -->
+        <footer class='foot-wrap'>
+            <div class='foot'>
+                <dl class='list1'>
+                    <dt>新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class='list1'>
+                    <dt>新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class='list1'>
+                    <dt>新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class='list1'>
+                    <dt>新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class='list1'>
+                    <dt>新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                    </dd>
+                </dl>
+                <div class='service'>
+                    <span>客服热线 400-000-000 企业采购或团购，请转2号</span>
+                    <span>周一至周日 2025225132</span>
+                </div>
+                <div class='copy'>
+                    <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+                    <p>
+                        <a href=""></a>沪ICP备09008015号</a>  Copyright © 2005-2020 版权所有
+                    </p>
+                    <p class='foot-img'>
+                        <a href=""><img src="./img/foot.png" alt=""></a>
+                        <a href=""><img src="./img/foot.png" alt=""></a>
+                        <a href=""><img src="./img/foot.png" alt=""></a>
+                        <a href=""><img src="./img/foot.png" alt=""></a>
+                        <a href=""><img src="./img/foot.png" alt=""></a>
+                        <a href=""><img src="./img/foot.png" alt=""></a>
+                    </p>
+                    <p>违法和不良信息举报电话 400-000-7788</p>
+                </div>
+            </div>
+        </footer>
+        <a href="#right">
+            <div class='maodian'>
+            </div>
+        </a>
+        <ul class='maodian-left'>
+            <a href="#lione"><li>新鲜</br>水果</li></a>
+            <a href="#litwo"><li>精选</br>肉类</li></a>
+            <a href="#lithree"><li>海鲜</br>水产</li></a>
+            <a href="#lifour"><li>乳品</br>糕点</li></a>
+            <a href="#lifive"><li>新鲜</br>蔬菜</li></a>
+            <a href="#lisix"><li>方便</br>速食</li></a>
+            <a href="#liseven"><li>粮油</br>杂货</li></a>
+            <a href="#lieight"><li>食品</br>饮料</li></a>
+        </ul>
+    </div>
+    <script src='./js/jquery-1.12.4.min.js'></script>
+    <script src='./js/index.js'></script>
+</body>
+</html>

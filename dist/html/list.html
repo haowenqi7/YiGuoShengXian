@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/css/public.css">
+    <link rel="stylesheet" href="../../dist/css/list.css">
+</head>
+    
+<body>
+    <div class="wrap">
+        <!-- 顶部导航 -->
+        <div class="nav-wrap">
+            <section class="nav">
+                <!-- 顶部导航左边 -->
+                <ul class="nav-left">
+                    <li>欢迎光临易果生鲜！</li>
+                    <li>
+                        <p>配送至：<a href="javascript:;" class="city">上海<i></i></a></p>
+                    </li>
+                    <li>
+                        <img src="../img/nav-notice.png" alt="">
+                        <a href="#" class="police">网警提示</a>
+                        
+                    </li>
+                </ul>
+
+                <!-- 顶部导航右边 -->
+                <ul class="nav-right">
+                    <li>
+                        <a href="javascript:;" class="recruitment"><span></span>人才招聘</a>
+                    </li> 
+                    <li>
+                        <a href="javascript:;" class="aptitude"><span></span>营业资质</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="coupons"><span></span>礼品兑换卷入口</a>
+                    </li> 
+                    <li>
+                        <a href="javascript:;" class="card"><span></span>礼品卡绑定</a> 
+                    </li>
+                    <li class="phone-wrap">
+                        <a href="javascript:;" class="phone"><span></span>手机易果<i></i></a>
+                        <div>
+                            <img src="../img/code1.jpg" alt="">
+                            <span>扫一扫下载APP</span>
+                            <img src="../img/code2.jpg" alt="">
+                            <span>易果生鲜微信</span>
+                        </div>
+                    </li>
+                    <li class="my-wrap">  
+                        <a href="javascript:;" class="my"><span></span>我的易果<i></i></a>
+                        <div class="my-menu">
+                            <a href="javascript:;">我的订单</a>
+                            <a href="javascript:;">我的优惠劵<i class="my-menu-two">0</i></a>
+                            <a href="javascript:;">我的收藏</a>
+                            <a href="javascript:;">我的悠币</a>
+                            <a href="javascript:;">我的退换货</a>
+                            <a href="javascript:;">预存款查询</a>
+                            <a href="javascript:;">立即充值</a>
+                        </div>
+                    </li>
+                    <li class="nav-change">
+                        <a href="../html/ygsx-registor.html">[注册]</a>
+                    </li>
+                    <li class="nav-change">
+                        <a href="../html/ygsx-login.html">[登录]</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+        <!-- 头部 -->
+        <div class="header-wrap">
+            <header>
+                <!-- logo -->
+                    <a href="" class="logo"></a>
+                <!-- 搜索框 -->
+                <section class="header-center">
+                    <section>
+                    <input type="text" class="input-text" value="输入商品名 / 编号 / 拼音" onfocus="if(this.value=='输入商品名 / 编号 / 拼音'){this.value='';this.style.color='#000';}" onblur="if(this.value==''){this.value='输入商品名 / 编号 / 拼音';this.style.color='#999';}" style="color:rgba(153,153,153);">
+                        <input type="submit" value="搜索" class="input-sub">
+                    </section>
+                    <section class="header-nav"> 
+                        <a href="javascript:;" class="one">虾仁</a>
+                        <a href="javascript:;" class="one">三文鱼</a>
+                        <a href="javascript:;" class="one">冰鲜牛肉</a>
+                        <a href="javascript:;" class="two">刺身</a>
+                        <a href="javascript:;" class="one">新西兰鹿肉</a>
+                        <a href="javascript:;" class="two">鳕鱼</a>
+                        <a href="javascript:;" class="two">牛腱</a>
+                        <a href="javascript:;" class="two">奇异果</a>
+                    </section>
+                </section>
+                <!-- 购物车 -->
+                <section class="shopping-cart">
+                    <!-- 初始状态 -->
+                    <section class="shopping-cart-start">
+                        <section class="shopping-num">
+                            <span><i id="buy"></i></span>
+                        </section>
+                        <section id="car-div" class="shopping-car">
+                            <p id="car-p">购物车中还没有商品，赶紧选购吧！</p>
+                        </section>  
+                    </section>
+                </section>
+            </header>
+        </div>
+
+        <!-- 头部2 -->
+        <div class="header-wrap2">
+            <header>
+                <!-- logo -->
+                    <a href="" class="logo2"></a>
+                <!-- 搜索框 -->
+                <section class="header-center2">
+                    <section>
+                        <input type="text" class="input-text2" value="输入商品名 / 编号 / 拼音" onfocus="if(this.value=='输入商品名 / 编号 / 拼音'){this.value='';this.style.color='#000';}" onblur="if(this.value==''){this.value='输入商品名 / 编号 / 拼音';this.style.color='#999';}" style="color:rgba(153,153,153);">
+                        <input type="submit" value="搜索" class="input-sub2">
+                    </section>
+                    <section class="header-nav2"> 
+                        <a href="javascript:;" class="one">虾仁</a>
+                        <a href="javascript:;" class="one">三文鱼</a>
+                        <a href="javascript:;" class="one">冰鲜牛肉</a>
+                        <a href="javascript:;" class="two">刺身</a>
+                    </section>
+                </section>
+                <!-- 购物车 -->
+                <section class="shopping-cart2">
+                    <!-- 初始状态 -->
+                    <section class="shopping-cart-start2">
+                        <section class="shopping-num2">
+                            <span><i id="buy2"></i></span>
+                        </section>
+                        <section id="car2-div" class="shopping-car2">
+                            <p id="car2-p">购物车中还没有商品，赶紧选购吧！</p>
+                        </section>  
+                    </section>
+                </section>
+            </header>
+        </div>
+
+
+        <!-- 二级菜单 -->
+        <div class="second-menu">
+            <div class="second-menu-all">
+                <a href="javascript:;"><b>全部商品分类▼</b></a>
+                <ul class="second-menu-num">
+                    <li href="javascript:;" class="second-menu-one"><span></span><p>精选肉类</p><i>&gt</i>
+                        <div class="second-menu-one1">
+                        <h4><a href="javascript:;">精选肉类</a></h4>
+                            <a href="javascript:;">蛋</a>
+                            <a href="javascript:;">牛排</a>
+                            <a href="javascript:;">蛋</a>
+                            <a href="javascript:;">牛排</a>
+                            <a href="javascript:;">蛋</a>
+                            <a href="javascript:;">牛排</a>
+                            <img src="../img/second-menu-big.png" alt="">
+                        </div>
+                    </li>
+                    <li href="javascript:;"><span></span><p>海鲜水产</p><i></i></li>
+                    <li href="javascript:;"><span></span><p>乳品糕点</p><i></i></li>
+                    <li href="javascript:;"><span></span><p>新鲜蔬菜</p><i></i></li>
+                    <li href="javascript:;"><span></span><p>方便速食</p><i></i></li>
+                    <li href="javascript:;"><span></span><p>粮油杂货</p><i></i></li>
+                    <li href="javascript:;"><span></span><p>新鲜水果</p><i></i></li>
+                    <li href="javascript:;"><span></span><p>食品饮料</p><i></i></li>
+                    <li href="javascript:;"><span></span><p>礼品礼券</p><i></i></li>
+                    <li href="javascript:;"><span></span><p>生活日用</p><i></i></li>
+                </ul>
+            </div>
+            <!-- 商品分类 -->
+            <div class="classify">
+                <ul>
+                    <li>
+                        <a href="">新品专区</a>
+                    </li>
+                    <li>
+                        <a href="">新品专区</a>
+                    </li>
+                    <li>
+                        <a href="">新品专区</a>
+                    </li>
+                    <li>
+                        <a href="">新品专区</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- 选择区 -->
+        <div class="select-wrap">
+            <div class="select">
+                <div class="all">
+                    <div class="tit">►所有分类</div>
+                    <ul>
+                        <li class="current">
+                            <a href="">蛋</a>
+                            <i>|</i>
+                        </li>
+                        <li>
+                            <a href="">牛肉</a>
+                            <i>|</i>
+                        </li>
+                        <li>
+                            <a href="">蛋</a>
+                            <i>|</i>
+                        </li>
+                        <li>
+                            <a href="">牛肉</a>
+                            <i>|</i>
+                        </li>
+                        <li>
+                            <a href="">蛋</a>
+                            <i>|</i>
+                        </li>
+                        <li>
+                            <a href="">牛肉</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 排序区 -->
+        <div class="clearfix">
+            <div class="all">
+                <div class="filter_sort">
+                    <a href="">默认排序</a>
+                    <a href="" class="sort1">销量
+                        <i></i>
+                    </a>
+                    <a href="" class="sort2">价格
+                        <i></i>
+                    </a>
+                    <a href="" class="sort3">评论
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 商品列表 -->
+        <div class="good-list-wrapall">
+        <div class="good-list-wrap">
+            <div class="good-list">
+                <ul>
+                    <li class="goodInfo" data-good-id="1">
+                        <div class="p-img-list">
+                            <a href="./detail.html">
+                                <img src="../img/egg.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="p-info-list">
+                            <div class="p-name">
+                                <a href="">高邮咸鸭蛋65g*6</a>
+                            </div>
+                            <div class="p-price">
+                                <span>
+                                    <strong>19.0</strong>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span>地方特产，多油好口感，咸香适中</span>
+                            <a href=""><input type="button" name="" id="" value="加入购物车" class="addToCart"></a>
+                        </div>
+                    </li>
+
+                    <li class="goodInfo" data-good-id="2">
+                        <div class="p-img-list">
+                            <a href="">
+                                <img src="../img/list-egg-li.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="p-info-list">
+                            <div class="p-name">
+                                <a href="">高邮咸鸭蛋65g*6</a>
+                            </div>
+                            <div class="p-price">
+                                <span>
+                                    <strong>40.00</strong>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span>地方特产，多油好口感，咸香适中</span>
+                            <a href=""><input type="button" name="" id="" value="加入购物车" class="addToCart"></a>
+                        </div>
+                    </li>
+
+                    <li class="goodInfo" data-good-id="3">
+                        <div class="p-img-list">
+                            <a href="">
+                                <img src="../img/detail-egg3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="p-info-list">
+                            <div class="p-name">
+                                <a href="">高邮咸鸭蛋65g*6</a>
+                            </div>
+                            <div class="p-price">
+                                <span>
+                                    <strong>35.00</strong>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-buy">
+                            <span>地方特产，多油好口感，咸香适中</span>
+                            <a href=""><input type="button" value="加入购物车" class="addToCart"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- 底部导航 -->
+        <div class="foot-nav-wrap">
+            <div class="foot-nav">
+                <ul>
+                    <li>
+                        <b>全球精选</b>
+                        <span>一站式生鲜购物方案</span>
+                    </li>
+                    <li>
+                        <b>全球精选</b>
+                        <span>一站式生鲜购物方案</span>
+                    </li>
+                    <li>
+                        <b>全球精选</b>
+                        <span>一站式生鲜购物方案</span>
+                    </li>
+                    <li>
+                        <b>全球精选</b>
+                        <span>一站式生鲜购物方案</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- 尾部列表 -->
+        <footer class="foot-wrap">
+            <div class="foot">
+                <dl class="list1">
+                    <dt>新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="list1">
+                    <dt>新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="list1">
+                    <dt>新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="list1">
+                    <dt>新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="list1">
+                    <dt>新手指南</dt>
+                    <dd>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                        <p>
+                            <a href="">账户注册</a>
+                        </p>
+                    </dd>
+                </dl>
+                <div class="service">
+                    <span>客服热线 400-000-000 企业采购或团购，请转2号</span>
+                    <span>周一至周日 2025225132</span>
+                </div>
+                <div class="copy">
+                    <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+                    <p>
+                        <a href=""></a>沪ICP备09008015号  Copyright © 2005-2020 版权所有
+                    </p>
+                    <p class="foot-img">
+                        <a href=""><img src="../img/foot.png" alt=""></a>
+                        <a href=""><img src="../img/foot.png" alt=""></a>
+                        <a href=""><img src="../img/foot.png" alt=""></a>
+                        <a href=""><img src="../img/foot.png" alt=""></a>
+                        <a href=""><img src="../img/foot.png" alt=""></a>
+                        <a href=""><img src="../img/foot.png" alt=""></a>
+                    </p>
+                    <p>违法和不良信息举报电话 400-000-7788</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+	<script src="../js/cookie.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/list.js"></script>
+    <script src="../js/jquery.fly.min.js"></script>
+    <script src="../js/requestAnimationFrame.js"></script>
+</div></body>
+</html>

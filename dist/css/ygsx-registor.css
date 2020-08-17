@@ -1,0 +1,152 @@
+body {
+  background: #f7f8f8; }
+
+.registor-wrap {
+  width: 100%; }
+  .registor-wrap .registor {
+    background: #e0e0e0; }
+    .registor-wrap .registor .registor-head {
+      padding: 15px 0 5px 0;
+      width: 1200px;
+      margin: 0 auto; }
+      .registor-wrap .registor .registor-head .registor-logo {
+        position: relative; }
+        .registor-wrap .registor .registor-head .registor-logo .h-tit {
+          color: #008842;
+          left: 240px;
+          font-size: 28px;
+          position: absolute;
+          top: 6px;
+          white-space: nowrap; }
+
+.wrap2 {
+  background: #fff;
+  height: 632px;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 1px solid #a5c9b6;
+  border-top: none; }
+  .wrap2 .f-left {
+    border-right: 1px dashed #a5c9b6;
+    width: 869px;
+    height: 500px;
+    margin-top: 40px;
+    float: left; }
+    .wrap2 .f-left .f-left-top {
+      position: relative; }
+      .wrap2 .f-left .f-left-top p {
+        height: 40px;
+        line-height: 38px;
+        margin-bottom: 29px;
+        font-size: 14px;
+        color: #444;
+        float: left; }
+        .wrap2 .f-left .f-left-top p span {
+          display: inline-block;
+          width: 220px;
+          padding-right: 20px;
+          text-align: right;
+          float: left; }
+        .wrap2 .f-left .f-left-top p input {
+          width: 147px;
+          margin-right: 20px;
+          border: 1px solid #c1c1c1;
+          background-color: #fff;
+          height: 38px;
+          vertical-align: middle;
+          padding-left: 14px;
+          width: 290px;
+          font-size: 14px;
+          float: left; }
+        .wrap2 .f-left .f-left-top p i {
+          display: inline-block;
+          position: absolute;
+          top: 5px;
+          left: 630px;
+          color: #666; }
+        .wrap2 .f-left .f-left-top p .btn-yzm {
+          color: #008842;
+          display: inline-block;
+          width: 121px;
+          height: 38px;
+          text-align: center;
+          line-height: 38px;
+          background-color: #f7f7f7;
+          border: 1px solid #c1c1c1;
+          margin-right: 20px; }
+        .wrap2 .f-left .f-left-top p label {
+          display: inline-block;
+          position: absolute;
+          top: 414px;
+          left: 260px; }
+        .wrap2 .f-left .f-left-top p #tab1chk {
+          width: 14px;
+          height: 14px;
+          vertical-align: -1px;
+          margin-left: -330px;
+          margin-top: 80px;
+          color: #444; }
+        .wrap2 .f-left .f-left-top p .btn-protocol {
+          color: #008842; }
+      .wrap2 .f-left .f-left-top .f-left-top2 {
+        position: absolute;
+        top: 70px;
+        left: 520px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url(../img/bg_input.png) no-repeat 0 -29px; }
+      .wrap2 .f-left .f-left-top .f-left-top4 {
+        position: absolute;
+        top: 210px;
+        left: 520px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url(../img/bg_input.png) no-repeat 0 -70px; }
+      .wrap2 .f-left .f-left-top .f-left-top5 {
+        position: absolute;
+        top: 280px;
+        left: 520px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url(../img/bg_input.png) no-repeat 0 -70px; }
+      .wrap2 .f-left .f-left-top .f-left-top6 {
+        position: absolute;
+        top: 350px;
+        left: 520px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url(../img/bg_input.png) no-repeat 0 -70px; }
+      .wrap2 .f-left .f-left-top .now-registor input {
+        width: 306px;
+        height: 50px;
+        background: #008842;
+        text-align: center;
+        position: absolute;
+        top: 480px;
+        left: 240px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bolder;
+        height: 50px;
+        line-height: 50px; }
+  .wrap2 .f-right {
+    width: 330px;
+    height: 500px;
+    float: left;
+    margin-top: 40px; }
+    .wrap2 .f-right .f-right-head p {
+      height: 60px;
+      line-height: 60px;
+      font-size: 14px;
+      text-align: right;
+      margin-right: 40px; }
+      .wrap2 .f-right .f-right-head p input {
+        color: red;
+        border: none;
+        background: #fff; }

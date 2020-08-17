@@ -1,0 +1,28 @@
+* html, * body, * ol, * ul, * li, * h1, * h2, * h3, * h4, * h5, * h6, * p, * th, * td, * dl, * dt, * form, * input {
+  margin: 0;
+  padding: 0; }
+
+* body {
+  font-size: 12px; }
+
+* ul, * ol, * li {
+  list-style: none; }
+
+* h1, * h2, * h3, * h4, * h5, * h6 {
+  font-size: 16px;
+  font-weight: normal; }
+
+* b, * strong {
+  font-weight: normal; }
+
+* i, * em {
+  font-style: normal; }
+
+* a, * u {
+  text-decoration: none; }
+
+* img {
+  border: 0; }
+
+* input {
+  outline: none; }
